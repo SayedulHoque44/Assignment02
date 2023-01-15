@@ -198,6 +198,41 @@ h2 {
 }
 .achive-boxes .A-box p {
 }
+
+/* -----------------
+  Project section css 
+  -------------------------*/
+.project-section {
+}
+.project-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px 0;
+}
+.project-boxes .P-B-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-boxes .P-B-item::before {
+  content: "";
+  width: 1%;
+  position: absolute;
+  height: 100%;
+  background-color: #ff900e;
+}
+.project-boxes .P-B-item::after {
+  content: "";
+  width: 1%;
+  position: absolute;
+  height: 100%;
+  background-color: #ff900e;
+  right: 0;
+}
+.project-boxes .P-B-item img {
+  width: 100%;
+}
 /* --------------------
     Sponspors section css
 -------------------------- */
@@ -238,22 +273,77 @@ h2 {
   .container {
     width: 100%;
   }
+
+  .nav-area {
+    flex-direction: column;
+  }
+  /* .section-info {
+    padding: 0 20px;
+  } */
+  /* .features-section {
+    flex-direction: column;
+  } */
+  .features-thumbnail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* .features-info {
+    padding: 0 20px;
+  } */
+  /* .service-section {
+    flex-direction: column;
+  } */
+  /* .service-bannar {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  } */
+  /* .service-bannar img {
+    width: 100%;
+  } */
+  .achive-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Sponspors-boxes {
+    grid-template-columns: repeat(1, 1fr);
+
+    gap: 30px;
+  }
+  .project-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .features-thumbnail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achive-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Sponspors-boxes {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+  }
+  .project-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
   main,
   section,
   header {
     padding: 0 20px;
-  }
-  .nav-area {
-    flex-direction: column;
   }
   .section-info {
     padding: 0 20px;
   }
   .features-section {
     flex-direction: column;
-  }
-  .features-thumbnail {
-    grid-template-columns: repeat(1, 1fr);
   }
   .features-info {
     padding: 0 20px;
@@ -267,13 +357,5 @@ h2 {
   }
   .service-bannar img {
     width: 100%;
-  }
-  .achive-boxes {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .Sponspors-boxes {
-    grid-template-columns: repeat(1, 1fr);
-
-    gap: 30px;
   }
 }
