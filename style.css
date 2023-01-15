@@ -1,0 +1,279 @@
+/* Links */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+/*----------------
+    common Css
+--------------------*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+p {
+  line-height: 1.5;
+  color: #8f8e8e;
+}
+h2 {
+  font-size: 35px;
+}
+.container {
+  width: 1240px;
+  margin: auto;
+  padding: 20px 0;
+}
+.section-title {
+  text-align: center;
+  line-height: 43px;
+  font-size: 35px;
+}
+.section-info {
+  text-align: center;
+  padding: 0 200px;
+}
+.btn-primary {
+  background: #ff900e;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.section-title02 {
+}
+.section-info02 {
+}
+/* --------------
+    Header css
+------------------ */
+
+.header {
+  background: #ff900e1a;
+}
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-area .logo {
+}
+.nav-area .logo h2 {
+}
+.nav-area .nav {
+}
+.nav-area .nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-area .nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* -------------
+    header-bannar-area start
+------------------*/
+.header-bannar-area {
+}
+.btn-area {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.bannar {
+  width: 100%;
+  margin: 10px 0;
+}
+.bannar img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* --------------------
+    Features section css
+-------------------------- */
+
+.features-section {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+.features-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.features-thumbnail img {
+}
+.features-info {
+  padding: 0 50px;
+}
+.features-info h2 {
+  font-size: 35px;
+  color: #d9d9d9;
+}
+.features-info h2 span:first-child {
+  color: #000;
+}
+.features-info h2 span:last-child {
+  color: #ff900e;
+}
+
+.features-info p {
+}
+
+/* --------------------
+    Service section css
+-------------------------- */
+.service-section {
+  display: flex;
+}
+.service-info {
+}
+.service-info h2 {
+  font-size: 35px;
+  border-left: 5px solid #ff900e;
+  padding-left: 10px;
+}
+.service-info p {
+}
+.info-box {
+  padding: 10px;
+  box-shadow: 1px 1px 8px #8080802e;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.info-box h4 {
+}
+.info-box p {
+}
+.service-bannar {
+  padding-left: 80px;
+  position: relative;
+  padding-bottom: 80px;
+}
+.service-bannar img {
+}
+.service-bannar .service-btn {
+  font-size: 35px;
+  font-weight: 800;
+  padding: 30px;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+}
+.service-bannar .service-btn span {
+  font-size: 18px;
+  display: block;
+}
+
+/* --------------------
+    achive section css
+-------------------------- */
+.achive-section {
+}
+.section-title02 {
+}
+.achive-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  padding: 50px 0;
+}
+.achive-boxes .A-box {
+  padding: 20px;
+  border: 2px solid #ff900e;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s ease-in all;
+  cursor: pointer;
+}
+.achive-boxes .A-box:hover {
+  background-color: #ff900e;
+  transform: scale(1.1);
+}
+.achive-boxes .A-box img {
+}
+.achive-boxes .A-box h3 {
+  font-size: 30px;
+}
+.achive-boxes .A-box p {
+}
+/* --------------------
+    Sponspors section css
+-------------------------- */
+.Sponspors-section {
+}
+.Sponspors-boxes {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+.Sponspors-boxes img {
+  display: block;
+  margin: auto;
+}
+
+/* --------------------
+    Footer section css
+-------------------------- */
+.footer-bg {
+  background-color: #fff4e7;
+  border-radius: 5px;
+  padding: 20px 0;
+}
+.footer {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.hide {
+  display: none;
+}
+
+/*----------------------
+  Media Quires 
+------------------------*/
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  main,
+  section,
+  header {
+    padding: 0 20px;
+  }
+  .nav-area {
+    flex-direction: column;
+  }
+  .section-info {
+    padding: 0 20px;
+  }
+  .features-section {
+    flex-direction: column;
+  }
+  .features-thumbnail {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features-info {
+    padding: 0 20px;
+  }
+  .service-section {
+    flex-direction: column;
+  }
+  .service-bannar {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  .service-bannar img {
+    width: 100%;
+  }
+  .achive-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Sponspors-boxes {
+    grid-template-columns: repeat(1, 1fr);
+
+    gap: 30px;
+  }
+}
